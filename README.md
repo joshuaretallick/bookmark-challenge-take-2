@@ -85,9 +85,10 @@ In this method we are creating a connection to the database, then calling the co
 You've now setup and are maintaining two databases for Bookmark Manager. Remember to update the README with instructions to create the test database, and run the psql commands for both databases.
 
 ```
-$> psql
-admin=# CREATE DATABASE "bookmark_manager_test";
-admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+Connect to psql
+Create the database using the psql command CREATE DATABASE bookmark_challenge;
+Connect to the database using the pqsl command \c bookmark_challenge;
+Run the query we have saved in the file 01_create_bookmarks_table.sql
 ```
 
 ### User Story 3
